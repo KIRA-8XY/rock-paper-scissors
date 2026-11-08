@@ -34,3 +34,35 @@ function getHumanChoice(){
     return humanInput
 }
 
+/*
+FUNCTION playRound(humanChoice, computerChoice)
+    Convert humanChoice to lowercase (case-insensitive)
+
+    IF humanChoice equals computerChoice
+        Print "It's a tie!"
+    
+    ELSE IF humanChoice beats computerChoice
+        Increase humanScore by 1
+        Print "You win!"
+
+    ELSE 
+        Increase computerScore by 1
+        Print "You lose!"
+
+END FUNCTION
+*/
+
+function playRound(humanChoice, computerChoice){
+    humanChoice = humanChoice.toLowerCase()
+
+    if (humanChoice === computerChoice) {
+        console.log("It's a tie!")
+    } else if ((humanChoice === 'paper' && computerChoice === 'rock') || (humanChoice === 'scissors' && computerChoice === 'rock') || (humanChoice === 'rock' && computerChoice === 'scissors')){
+        console.log('You win!')
+    } else {
+        console.log('You lose.')
+    }
+}
+
+
+

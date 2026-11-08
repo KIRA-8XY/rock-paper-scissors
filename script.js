@@ -1,3 +1,5 @@
+
+
 function getComputerChoice(){
     choice = Math.floor(Math.random() * 3);
     if (choice === 0){
@@ -7,5 +9,10 @@ function getComputerChoice(){
     } else {
         return 'scissors';
     }
+}
+
+function getHumanChoice(){
+    let humanInput = prompt('One, two, three, shoot!')
+    return humanInput
 }
 
